@@ -1,6 +1,6 @@
 class Scene(object):
 
-    def __enter__(self):
+    def enter(self):
         pass
 
 
@@ -11,3 +11,29 @@ class Engine(object):
 
     def play(self):
         pass
+
+
+class Death(Scene):
+
+    def enter(self):
+        pass
+
+
+class CentralCorridor(Scene):
+
+    def enter(self):
+        pass
+
+
+class LaserWeaponArmory(Scene):
+
+    def enter(self):
+        pass
+
+
+class TheBridge(Scene):
+
+    def enter(self):
+        pass
+
+
