@@ -53,6 +53,10 @@ class CentralCorridor(Scene):
         action = input(">")
 
         if action == "shoot!":
+            print("Quick on the draw you yank out your blaster and fire it at the Gothon.")
+            print("His clown costume is flowing and moving around his body, which throws")
+            print("off your aim. Your later hits his costume but misses him entirely. This")
+            print("complete ruins his brand new costume his mother bought him, which")
 
 
 
