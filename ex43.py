@@ -158,7 +158,24 @@ class EscapePod(Scene):
         print("but you don't have time to look. There's 5 pods, which one")
         print("do you take?")
 
+        good_pod = randint(1, 5)
+        guess = input("[pod]>")
 
+        if int(guess) != good_pod:
+            print("You jump into pod %s and hit the eject button." % guess)
+            print("The pod escapes out into the void of space, then")
+            print("implodes as the hull ruptures, crushing your body")
+            print("into jam jelly.")
+            return 'death'
+
+        else:
+            print("You jump into pod %s and hit the eject button." % guess)
+            print("The pod easily slides out of the spaceship heading to")
+            print("The planet below. As it flies to the planet, you look")
+            print("back to see your ship implode then explode like a")
+            print("bright star, taking out the Gothon ship at the same")
+            print("time. You won!")
+            return 'finished'
 
 
 class Map(object):
