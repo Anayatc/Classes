@@ -114,8 +114,16 @@ class LaserWeaponArmory(Scene):
 class TheBridge(Scene):
 
     def enter(self):
-        pass
-randint(1,9),
+        print("You burst onto the Bridge with the neutron destruct bomb")
+        print("under your arm and surprise 5 Gothons who are trying to")
+        print("take control of the ship. Each of them has an even uglier")
+        print("clown costume than the last. They haven't pulled their")
+        print("weapons out yet, as they see the active bomb under your")
+        print("arm and don't want to set it off.")
+
+        action = input(">")
+        if action == "throw the bomb":
+            pass
 
 
 class EscapePod(Scene):
