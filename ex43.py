@@ -22,7 +22,6 @@ class Engine(object):
             next_scene_name = current_scene.enter()
             current_scene = self.scene_map.next_scene(next_scene_name)
 
-        # be sure to print out the last scene
         current_scene.enter()
 
 
@@ -50,9 +49,9 @@ class CentralCorridor(Scene):
         print("escape pod.")
         print("\n")
         print("You're running down the central corridor to the Weapons Armory when")
-        print ("a Gothon jumps out, red scaly skin, dark grimy teeth, and evil clown costume")
-        print ("flowing around his hate filled body.  He's blocking the door to the")
-        print ("Armory and about to pull a weapon to blast you.")
+        print("a Gothon jumps out, red scaly skin, dark grimy teeth, and evil clown costume")
+        print("flowing around his hate filled body.  He's blocking the door to the")
+        print("Armory and about to pull a weapon to blast you.")
 
         action = input("> ")
 
@@ -98,12 +97,12 @@ class LaserWeaponArmory(Scene):
         print("and you need the code to get the bomb out.  If you get the code")
         print("wrong 10 times then the lock closes forever and you can't")
         print("get the bomb.  The code is 3 digits.")
-        code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
+        code = "%d%d%d" % (randint(1, 9), randint(1, 9), randint(1, 9))
         guess = input("[keypad]> ")
         guesses = 0
 
         while guess != code and guesses < 10:
-            print ("BZZZZEDDD!")
+            print("BZZZZEDDD!")
             guesses += 1
             guess = input("[keypad]> ")
 
@@ -167,9 +166,8 @@ class EscapePod(Scene):
         print("but you don't have time to look.  There's 5 pods, which one")
         print("do you take?")
 
-        good_pod = randint(1,5)
+        good_pod = randint(1, 5)
         guess = input("[pod #]> ")
-
 
         if int(guess) != good_pod:
             print("You jump into pod %s and hit the eject button." % guess)
