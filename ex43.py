@@ -72,6 +72,12 @@ class CentralCorridor(Scene):
 
         elif action == "tell a joke":
             print("Lucky for you they made you learn Gothon insults in the academy.")
+            print("You tell the one Gothon joke you know:")
+            print("Lbhe zbgure vf fb sng, jura fur fvgf nebhaq gur ubhfr, fur fvgf nebhaq gur ubhfr.")
+            print("The Gothon stops, tries not to laugh then bursts out laughing and can't move.")
+            print("While he's laughing you run up and shoot him square in the head")
+            print("putting him down, then jump through the Weapons Armory door.")
+            return 'laser_weapons_armory'
 
 
 
