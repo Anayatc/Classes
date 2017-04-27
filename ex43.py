@@ -146,10 +146,19 @@ class TheBridge(Scene):
             print("DOES NOT COMPUTE!")
             return 'the_bridge'
 
+
 class EscapePod(Scene):
 
     def enter(self):
-        pass
+        print("You rush through the ship desperately trying to make it to")
+        print("the escape pod before the whole ship explodes. it seems like")
+        print("hardly any Gothons are on the ship, so your run is clear of")
+        print("interference. You get to the chamber with the escape pods, and")
+        print("now you need to pick one to take. Some of them could be damaged")
+        print("but you don't have time to look. There's 5 pods, which one")
+        print("do you take?")
+
+
 
 
 class Map(object):
