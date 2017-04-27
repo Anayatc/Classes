@@ -142,6 +142,10 @@ class TheBridge(Scene):
             print("get off this tin can.")
             return 'escape_pod'
 
+        else:
+            print("DOES NOT COMPUTE!")
+            return 'the_bridge'
+
 class EscapePod(Scene):
 
     def enter(self):
