@@ -79,9 +79,9 @@ class CentralCorridor(Scene):
             print("putting him down, then jump through the Weapons Armory door.")
             return 'laser_weapons_armory'
 
-
-
-
+        else:
+            print("DOES NOT COMPUTE!")
+            return 'central_corridor'
 
 
 class LaserWeaponArmory(Scene):
