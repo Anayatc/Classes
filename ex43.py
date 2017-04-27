@@ -131,8 +131,16 @@ class TheBridge(Scene):
             print("it goes off.")
             return 'death'
 
-
-
+        elif action == "slowly place the bomb":
+            print("You point your blaster at the bomb under your arm")
+            print("and the Gothons put their hands up and start to sweat.")
+            print("You inch backward to the door, open it, and then carefully")
+            print("place the bomb on the floor, pointing your blaster at it.")
+            print("You then jump back through the door, punch the close button")
+            print("and blast the lock so the Gothons can't get out.")
+            print("Now the bomb is placed you run to the escape pod to")
+            print("get off this tin can.")
+            return 'escape_pod'
 
 class EscapePod(Scene):
 
