@@ -16,6 +16,7 @@ class Engine(object):
 
     def play(self):
         current_scene = self.scene_map.opening_scene()
+
         while True:
             print("\n-------")
             next_scene_name = current_scene.enter()
@@ -77,7 +78,7 @@ class CentralCorridor(Scene):
             print("The Gothon stops, tries not to laugh then bursts out laughing and can't move.")
             print("While he's laughing you run up and shoot him square in the head")
             print("putting him down, then jump through the Weapons Armory door.")
-            return 'laser_weapons_armory'
+            return 'laser_weapon_armory'
 
         else:
             print("DOES NOT COMPUTE!")
@@ -186,7 +187,6 @@ class Map(object):
         'the_bridge': TheBridge(),
         'escape_pod': EscapePod(),
         'death': Death()
-
     }
 
     def __init__(self, start_scene):
