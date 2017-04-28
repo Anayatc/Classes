@@ -1,4 +1,4 @@
 class Parent(object):
 
     def implicit(self):
-        pass
+        print("PARENT implicit()")
