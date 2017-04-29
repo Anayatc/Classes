@@ -31,3 +31,22 @@ son1 = Child1()
 dad1.override()
 son1.override()
 
+
+class Parent2(object):
+
+    def altered(self):
+        print("PARENT altered()")
+
+class Child2(Parent):
+
+    def altered(self):
+        print("CHILD, BEFORE PARENT altered()")
+        super(Child, self).altered()
+        print("CHILD, AFTER PARENT altered()")
+
+dad2 = Parent2()
+son2 = Child2()
+
+dad2.altered()
+son2.altered()
+
