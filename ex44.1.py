@@ -25,3 +25,9 @@ class Child(object):
         print("CHILD, BEFORE OTHER altered()")
         self.other.altered()
         print("CHILD, AFTER OTHER altered()")
+
+son = Child()
+
+son.implicit()
+son.override()
+son.altered()
